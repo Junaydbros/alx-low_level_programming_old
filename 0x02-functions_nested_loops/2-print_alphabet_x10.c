@@ -14,8 +14,8 @@ void print_alphabet_x10(void)
 		if (ch > 'z')
 		{
 			ch = 'a';
+			_putchar('\n');
 			i++;
 		}
 	}
-	_putchar('\n');
 }

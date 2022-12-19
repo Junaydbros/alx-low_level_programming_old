@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
  * main - entry
- * Description: prints the numbers from 1 - 100
- * prints 'Fizz' for multiples of three and 'Buzz' for the multiples of five
+ * Description: prints the numbers from 1 - 100 w/
+ * prints 'Fizz' for multiples of 3 and 'Buzz' for the multiples of 5
  * prints 'FizzBuzz' for multiple of 3 and 5
- * Return: 0
+ * Return: Always 0
  */
 int main(void)
 {

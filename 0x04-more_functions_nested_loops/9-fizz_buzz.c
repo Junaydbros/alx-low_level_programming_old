@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * main - entry
  * Description - prints the numbers from 1 - 100

@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
- * main - file that tests the function positive_or_negative()
+ * main - tests that the function positive_or_negative()
+ * gives the correct output
  * Return: Always 0
  */
-
 int main(void)
 {
 	int i;

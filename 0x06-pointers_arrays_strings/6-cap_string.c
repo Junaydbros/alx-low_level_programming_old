@@ -2,12 +2,12 @@
 /**
  * cap_string - a function that capitalizes all words of a string
  * @n: the string
- * Return: capitalized words
+ * Return: capitalized words in n
  */
 char *cap_string(char *n)
 {
 	int c = 0, d;
-	char a[] = " \t\n, ; . ! ? \"() {}";
+	char a[] = " \t\n,;.!?\"(){}";
 
 	while (*(n + c))
 	{

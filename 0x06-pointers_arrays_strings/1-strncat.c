@@ -8,16 +8,16 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int a, b;
+	int i, j;
 
-	for (a = 0; dest[a] != '\0'; a++)
+	for (i = 0; dest[i] != '\0'; i++)
 	{
 		continue;
 	}
-	for (b = 0; src[b] != '\0'; b++)
+	for (j = 0; src[j] != '\0'; j++)
 	{
-		dest[a + b] = src[b];
+		dest[i + j] = src[j];
 	}
-	dest[a + b] = '\0';
+	dest[i + j] = '\0';
 	return (dest);
 }

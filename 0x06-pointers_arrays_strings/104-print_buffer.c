@@ -2,19 +2,19 @@
 #include <stdio.h>
 /**
  * print_line - function that prints size in bytes of a buffer
- * @z: buffer to be printed
+ * @c: buffer to be printed
  * @n: size in bytes of the buffer to be printed
  * @l: buffer line to be printed
  * Return: print 10 bytes per line
  */
-void print_line(char *z, int n, int l)
+void print_line(char *c, int n, int l)
 {
 	int d, e;
 
 	for (d = 0; d <= 9; d++)
 	{
 		if (d <= n)
-			printf("%02x", z[l * 10 + d]);
+			printf("%02x", c[l * 10 + d]);
 		else
 			printf(" ");
 		if (d % 2)
@@ -22,10 +22,10 @@ void print_line(char *z, int n, int l)
 	}
 	for (e = 0; e <= n; e++)
 	{
-		if (z[l * 10 + e] > 31 && z[l * 10 + e] < 127)
-			putchar(z[l * 10 + e]);
+		if (c[l * 10 + e] > 31 && c[l * 10 + e] < 127)
+			putchar(c[l * 10 + e]);
 		else
-			putchar ('.');
+			putchar('.');
 	}
 }
 
@@ -37,18 +37,18 @@ void print_line(char *z, int n, int l)
  */
 void print_buffer(char *b, int size)
 {
-	int i;
+	int a;
 
-	for (i = 0; i <= (size - 1) / 10 && size; i++)
+	for (a = 0; a <= (size - 1) / 10 && size; a++)
 	{
-		printf("%08x: ", i * 10);
-		if (i < size / 10)
+		printf("%08x: ", a * 10);
+		if (a < size / 10)
 		{
-			print_line(b, 9, i);
+			print_line(b, 9, a);
 		}
 		else
 		{
-			print_line(b, size % 10 - 1, i);
+			print_line(b, size % 10 - 1, a);
 		}
 		putchar('\n');
 	}

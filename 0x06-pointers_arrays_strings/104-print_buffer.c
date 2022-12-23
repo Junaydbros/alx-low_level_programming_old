@@ -3,24 +3,25 @@
 /**
  * print_line - function that prints size in bytes of a buffer
  * @c: buffer to be printed
- * @n: size in bytes of the buffer to be printed
+ * @s: size in bytes of the buffer to be printed
  * @l: buffer line to be printed
  * Return: print 10 bytes per line
  */
-void print_line(char *c, int n, int l)
+void print_line(char *c, int s, int l)
 {
 	int d, e;
 
 	for (d = 0; d <= 9; d++)
 	{
-		if (d <= n)
+		if (d <= s)
 			printf("%02x", c[l * 10 + d]);
 		else
 			printf(" ");
 		if (d % 2)
+
 			putchar(' ');
 	}
-	for (e = 0; e <= n; e++)
+	for (e = 0; e <= s; e++)
 	{
 		if (c[l * 10 + e] > 31 && c[l * 10 + e] < 127)
 			putchar(c[l * 10 + e]);

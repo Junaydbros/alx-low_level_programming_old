@@ -12,10 +12,13 @@ char *rot13(char *n)
 
 	for (t = 0; *(n + t); t++)
 	{
-		for (v = 0; v <= 52; v++)
+		for (v = 0; v < 52; v++)
 		{
-			if (x[v] == n[t])
-				n[t] = y[v];
+			if (x[v] == *(n + t))
+			{
+				*(n + t) = y[v];
+				break;
+			}
 		}
 	}
 	return (n);

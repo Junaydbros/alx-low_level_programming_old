@@ -7,20 +7,19 @@
 
 void print_chessboard(char (*a)[8])
 {
-	for (int i = 0; i < 8; i++)
+	for (int c = 0; c < 8; c++)
 	{
-		for (int j = 0; j < 8; j++)
+		for (int d = 0; d < 8; d++)
 		{
-			if ((i + j) % 2 == 0)
+			if ((c + d) % 2 == 0)
 			{
-				a[i][j] = 'B';
+				a[c][d] = 'B';
 			}
 			else
 			{
-				a[i][j] = 'W';
+				a[c][d] = 'W';
 			}
-			_putchar(a[i][j]);
-			_putchar(' ');
+			_putchar(a[c][d]);
 		}
 		_putchar('\n');
 	}

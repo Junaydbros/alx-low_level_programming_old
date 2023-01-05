@@ -9,9 +9,9 @@ void print_chessboard(char (*a)[8])
 {
 	int c, d;
 
-	for (int c = 0; c < 8; c++)
+	for (c = 0; c < 8; c++)
 	{
-		for (int d = 0; d < 8; d++)
+		for (d = 0; d < 8; d++)
 		{
 			_putchar(a[c][d]);
 		}

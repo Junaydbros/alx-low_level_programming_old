@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 	{
 		return (0);
 	}
-	int root = (int) _sqrt_recursion(n);
+	int root = (int) sqrt(n);
 
 	if (root * root == n)
 	{

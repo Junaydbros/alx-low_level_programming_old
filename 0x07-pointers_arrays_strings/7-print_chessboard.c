@@ -22,7 +22,6 @@ void print_chessboard(char (*a)[8])
 				a[c][d] = 'W';
 			}
 			_putchar(a[c][d]);
-			_putchar(' ');
 		}
 		_putchar('\n');
 	}

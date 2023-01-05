@@ -10,14 +10,6 @@ void print_chessboard(char (*a)[8])
 	{
 		for (int d = 0; d < 8; d++)
 		{
-			if ((c + d) % 2 == 0)
-			{
-				a[c][d] = 'B';
-			}
-			else
-			{
-				a[c][d] = 'W';
-			}
 			printf("%c ", a[c][d]);
 		}
 		printf("\n");

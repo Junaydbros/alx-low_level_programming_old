@@ -2,23 +2,24 @@
 /**
  * print_chessboard - function that prints the chessboard
  * @a: pointer to pieces to print
+ * Return: void
  */
 
 void print_chessboard(char (*a)[8])
 {
-	for (int c = 0; c < 8; c++)
+	for (int i = 0; i < 8; i++)
 	{
-		for (int d = 0; d < 8; d++)
+		for (int j = 0; j < 8; j++)
 		{
-			if ((c + d) % 2 == 0)
+			if ((i + j) % 2 == 0)
 			{
-				a[c][d] = 'B';
+				a[i][j] = 'B';
 			}
 			else
 			{
-				a[c][d] = 'W';
+				a[i][j] = 'W';
 			}
-			_putchar(a[c][d]);
+			_putchar(a[i][j]);
 			_putchar(' ');
 		}
 		_putchar('\n');

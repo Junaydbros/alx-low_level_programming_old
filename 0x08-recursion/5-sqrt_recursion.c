@@ -12,11 +12,9 @@ int _sqrt_recursion(int n)
 	{
 		return (0);
 	}
-	int root;
-
-	if (root * root == n)
+	if (sqrt(n) * sqrt(n) == n)
 	{
-		return (root);
+		return (sqrt(n));
 	}
 	else
 	{

@@ -16,7 +16,7 @@ int checker(int x, int y)
 	{
 		return (-1);
 	}
-	return (check(x + 1, y));
+	return (checker(x + 1, y));
 }
 
 /**
